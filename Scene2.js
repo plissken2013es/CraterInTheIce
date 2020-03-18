@@ -14,7 +14,8 @@ class Scene2 extends Phaser.Scene {
     create() {
         this.background = this.add.image(0, 0, "background");
         this.mist = this.add.tileSprite(0, 0, config.width, config.height, "mist");
-        this.mist.alpha = 0.16;
+        this.mist.alpha = 0.3;
+        this.mist.blendMode = "ADD";
         
         this.particles = this.add.particles("flares");
 
@@ -83,7 +84,8 @@ class Scene2 extends Phaser.Scene {
     }
     
     update() {
-        this.mist.tilePositionX -= 0.1;
+        this.mist.tilePositionX -= 0.5;
+        this.mist.tilePositionY -= 0.2;
     }
     
     // general methods
