@@ -56,7 +56,7 @@ class Scene1 extends Phaser.Scene {
         
         this.load.atlas('flares', 'assets/png/flares.png', 'assets/png/flares.json');
         
-        this.load.audio("music", ["assets/sounds/sci-fi_platformer12.ogg", "assets/sounds/sci-fi_platformer12.ogg"]);
+        this.load.audio("music", ["assets/sounds/sci-fi_platformer12.mp3", "assets/sounds/sci-fi_platformer12.ogg"]);
         this.load.audio("mistery_sound", ["assets/sounds/mistery.mp3", "assets/sounds/mistery.ogg"]);
     }
     
